@@ -1,0 +1,16 @@
+[mcp_servers.agentitus_pocketbase]
+command = "node"
+args = ["scripts/mcp/pocketbase.mjs"]
+cwd = "C:\\Proyectos\\agentitus"
+startup_timeout_sec = 20
+tool_timeout_sec = 60
+default_tools_approval_mode = "auto"
+
+[mcp_servers.agentitus_pocketbase.tools.pb_create_record]
+approval_mode = "prompt"
+
+[mcp_servers.agentitus_pocketbase.tools.pb_update_record]
+approval_mode = "prompt"
+
+[mcp_servers.agentitus_pocketbase.tools.pb_delete_record]
+approval_mode = "prompt"
